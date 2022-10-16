@@ -52,7 +52,8 @@ for (var word : words) { // перебираем слова
     if (word.isEmpty()) {
         continue;
     }
-    freqs.put(word.toLowerCase(), freqs.getOrDefault(word.toLowerCase(), 0) + 1);
+    word = word.toLowerCase();
+    freqs.put(word, freqs.getOrDefault(word, 0) + 1);
 }
 ```
 
